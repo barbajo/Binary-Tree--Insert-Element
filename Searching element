@@ -24,7 +24,7 @@ public class BinTree {
                 return search(theRootNode.rightBNode, keyName);
             }
         }
-    }
+    } 
 
     //returns null if no result else returns 
     //the AnyClass object matched with the keyName
