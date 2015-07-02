@@ -22,7 +22,7 @@ public class BinTree {
         }
         return theRootNode;
     }
-
+ 
     public void insertBST(AnyClass anyClass) {
         BNode anyClassBTNode = new BNode(anyClass);
     //calls insert above
