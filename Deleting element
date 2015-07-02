@@ -24,7 +24,7 @@ public class BSTNode {
                   return true;
             }
       }
- 
+  
       public int minValue() {
             if (left == null)
                   return value;
