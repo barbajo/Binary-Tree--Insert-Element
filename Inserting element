@@ -25,6 +25,6 @@ public class BinTree {
 
     public void insertBST(AnyClass anyClass) {
         BNode anyClassBTNode = new BNode(anyClass);
-        //calls insert above
+    //calls insert above
         theBTRootNode = insertAB(theBTRootNode, anyClassBTNode);
     }
