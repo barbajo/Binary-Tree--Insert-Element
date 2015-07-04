@@ -13,15 +13,11 @@ public class BSTNode {
                   else
                         return false;
             } else {
-                  if (left != null && right != null) {
+                 left != null && right != null
                         this.value = right.minValue();
                         right.remove(this.value, this);
-                  } else if (parent.left == this) {
-                        parent.left = (left != null) ? left : right;
-                  } else if (parent.right == this) {
-                        parent.right = (left != null) ? left : right;
-                  }
-                  return true;
+                  
+                 
             }
       }
   
