@@ -25,10 +25,5 @@ public class BSTNode {
             }
       }
   
-      public int minValue() {
-            if (left == null)
-                  return value;
-            else
-                  return left.minValue();
-      }
+      
 }
