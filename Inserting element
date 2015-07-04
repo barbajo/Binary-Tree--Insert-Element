@@ -17,7 +17,7 @@ public class BSTNode{
   }
 
   public void run() {
-    // build the simple tree from chapter 11.
+    // build the simple tree 
     Node root = new Node(5);
     System.out.println("Binary Tree Example");
     System.out.println("Building tree with root value " + root.value);
@@ -66,23 +66,23 @@ public class BSTNode{
    * uses reverse-order traversal when the origin is greater than the node's
    * order
    */
-  public void printFrontToBack(Node node, int camera) {
+  public void printFrontToBack(Node node, int c) {
     if (node == null)
       return;
-    if (node.value > camera) {
+    if (node.value > c) {
       // print in order
-      printFrontToBack(node.left, camera);
+      printFrontToBack(node.left, c;
       System.out.println("  Traversed " + node.value);
-      printFrontToBack(node.right, camera);
+      printFrontToBack(node.right, c);
     } else if (node.value < camera) {
       // print reverse order
-      printFrontToBack(node.right, camera);
+      printFrontToBack(node.right, c);
       System.out.println("  Traversed " + node.value);
-      printFrontToBack(node.left, camera);
+      printFrontToBack(node.left, c);
     } else {
       // order doesn't matter
-      printFrontToBack(node.left, camera);
-      printFrontToBack(node.right, camera);
+      printFrontToBack(node.left, c);
+      printFrontToBack(node.right, c);
     }
   }
 
