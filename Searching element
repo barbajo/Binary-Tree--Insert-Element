@@ -1,35 +1,34 @@
 public class BinTree {
-    BNode theBTRootNode;
+    
 
     public BinTree() // constructor
     {
         theBTRootNode = null;
     }
-// ----- Search for key name and  returns ref. 
+// ----- Search for node
     //              to BNode or null if not found--------
-    protected BNode search(BNode theRootNode, String keyName) {
+    protected BNode search(BNode theRootNode, String Name) {
         //if the root is null returns null
         if (theRootNode == null) {
             return null;
         } else {
             //checks if they are equal
-            if (keyName.compareTo(theRootNode.anyClass.surname) == 0) {
+            if (Name.compareTo(theRootNode.anyClass.name) == 0) {
                 return theRootNode;
-            //checks id the key is smaller than the current
+            //checks if the name is smaller than the current
             //record  if smaller traverses to the left
-            } else if (keyName.compareTo(theRootNode.anyClass.surname) < 0) {
-                return search(theRootNode.leftBNode, keyName);
+            } else if (Name.compareTo(theRootNode.anyClass.name) > 0) {
+                return search(theRootNode.leftBNode, Name);
             } else {
                 // if bigger traverses to the left
-                return search(theRootNode.rightBNode, keyName);
+                return search(theRootNode.rightBNode, Name);
             }
         }
     } 
 
-    //returns null if no result else returns 
-    //the AnyClass object matched with the keyName
+    //the AnyClass object matched with the Name
     public AnyClass searchBST(String keyName) {
-        BNode temp = search(theBTRootNode, keyName);
+        BNode temp = search(theBTRootNode, Name);
         if (temp == null) {
       //noresults found
            return null;
