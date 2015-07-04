@@ -49,41 +49,5 @@ public class BSTNode{
             + node.value);
         node.right = new Node(value);
       }
-    }
-  }
-
-  public void printInOrder(Node node) {
-    if (node != null) {
-      printInOrder(node.left);
-      System.out.println("  Traversed " + node.value);
-      printInOrder(node.right);
-    }
-  }
-
-  /**
-   * uses in-order traversal when the origin is less than the node's value
-   * 
-   * uses reverse-order traversal when the origin is greater than the node's
-   * order
-   */
-  public void printFrontToBack(Node node, int c) {
-    if (node == null)
-      return;
-    if (node.value > c) {
-      // print in order
-      printFrontToBack(node.left, c;
-      System.out.println("  Traversed " + node.value);
-      printFrontToBack(node.right, c);
-    } else if (node.value < camera) {
-      // print reverse order
-      printFrontToBack(node.right, c);
-      System.out.println("  Traversed " + node.value);
-      printFrontToBack(node.left, c);
-    } else {
-      // order doesn't matter
-      printFrontToBack(node.left, c);
-      printFrontToBack(node.right, c);
-    }
-  }
 
 }
